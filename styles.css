@@ -106,7 +106,35 @@ nav {
   margin-bottom: 20px;
 }
 
-/* Blog Section */
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.portfolio-list a {
+  color: #7A4E2D;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.portfolio-list a:hover {
+  color: #5E3C21;
+}
+
+/* Blog Overview Section */
 .blog {
   padding: 50px 20px;
   text-align: center;
@@ -115,6 +143,14 @@ nav {
 .blog h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
+}
+
+.blog p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .blog-list {
@@ -132,6 +168,24 @@ nav {
 
 .blog-list a:hover {
   color: #5E3C21;
+}
+
+/* Blog Content Pages (Optional if blog pages use same file) */
+.blog-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.blog-content h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  margin-bottom: 16px;
 }
 
 /* Footer */
