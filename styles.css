@@ -1,199 +1,143 @@
-/* Basic Reset */
+/* Base Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body and Layout */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F3E8DC; /* Warm Beige */
+  color: #1E1E1E; /* Soft black */
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* Container */
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* Header */
-header {
-    background-color: #fff;
-    padding: 20px 0;
-    border-bottom: 2px solid #e0e0e0;
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-header .logo img {
-    width: 150px;
+.nav-menu li a {
+  text-decoration: none;
+  color: #1E1E1E;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.nav-menu li a:hover {
+  color: #7A4E2D; /* Deep Cocoa Accent */
 }
 
 /* Hero Section */
-#hero {
-    background-color: #1e3a8a; /* Nestle Sites blue */
-    text-align: center;
-    padding: 50px 0;
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
 
-#hero h1 {
-    font-size: 3rem;
-    color: #fff;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-#hero p {
-    color: #fff;
-    font-size: 1.25rem;
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
 }
 
 .cta-button {
-    display: inline-block;
-    background-color: #fff;
-    color: #1e3a8a; /* Nestle Sites blue */
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
+  background-color: #7A4E2D;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #e0e0e0;
+  background-color: #5E3C21;
 }
 
-/* Services Section */
-#services {
-    padding: 50px 0;
-    text-align: center;
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 50px 20px;
 }
 
-#services .service {
-    margin-bottom: 30px;
+.features h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-#services .service h3 {
-    font-size: 2rem;
-    color: #1e3a8a; /* Nestle Sites blue */
+.features ul {
+  list-style: disc;
+  margin-top: 10px;
+  padding-left: 40px;
+  text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
-#services .service p {
-    font-size: 1rem;
-    color: #555;
+/* CTA Section */
+.cta-secondary {
+  background-color: #E6D3C2;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-/* Contact Section */
-#contact {
-    padding: 50px 0;
-    background-color: #fff;
-    text-align: center;
+.cta-secondary h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact iframe {
-    width: 100%;
-    border: none;
-    height: 500px;
-}
-
-/* WhatsApp Button */
-.whatsapp-button {
-    display: inline-block;
-    background-color: #1e3a8a; /* Nestle Sites blue */
-    color: #fff;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.whatsapp-button:hover {
-    background-color: #128c7e;
+.cta-secondary p {
+  margin-bottom: 20px;
 }
 
 /* Blog Section */
-#blog {
-    padding: 50px 0;
+.blog {
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.blog h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.blog-posts .post {
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.blog-posts .post h3 {
-    font-size: 1.5rem;
-    color: #333;
+.blog-list a {
+  color: #7A4E2D;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.blog-posts .post a {
-    text-decoration: none;
-    color: #1e3a8a; /* Nestle Sites blue */
-    font-weight: bold;
+.blog-list a:hover {
+  color: #5E3C21;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin-bottom: 10px;
-    }
-
-    .blog-posts {
-        flex-direction: column;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 15px;
-    }
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #555;
 }
