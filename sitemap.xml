@@ -8,6 +8,12 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Portfolio Overview -->
+  <url>
+    <loc>https://www.nestlesites.co.za/portfolio.html</loc>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Blog Overview Page -->
   <url>
     <loc>https://www.nestlesites.co.za/blogs.html</loc>
@@ -28,12 +34,10 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- External Portfolio (Optional) -->
-  <!--
+  <!-- Contact Section -->
   <url>
-    <loc>https://www.prettygalaxysa.co.za/</loc>
-    <priority>0.5</priority>
+    <loc>https://www.nestlesites.co.za/#contact</loc>
+    <priority>0.6</priority>
   </url>
-  -->
 
 </urlset>
